@@ -16,6 +16,8 @@ export default function Banner() {
         <img
           src={me}
           alt="banner"
+          width={"auto"}
+          height={"auto"}
           className="w-full px-20 md:px-0  object-cover object-center pb-3 md:pb-0"
         />
       </div>
