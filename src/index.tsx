@@ -3,28 +3,10 @@ import reportWebVitals from "./reportWebVitals";
 
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import {
-  Outlet,
-  RouterProvider,
-  ReactRouter,
-  RootRoute,
-} from "@tanstack/react-router";
-import { PagePath } from "./ts/routes/web";
-import Nav from "./ts/components/Nav";
+import { RouterProvider, ReactRouter } from "@tanstack/react-router";
+import { PagePath, rootRoute } from "./ts/routes/web";
 import Foot from "./ts/components/Footer";
 import { HelmetProvider } from "react-helmet-async";
-import { constants } from "fs/promises";
-
-const rootRoute = new RootRoute({
-  component: () => (
-    <>
-      <Nav />
-      <div className=" max-w-screen-2xl mx-auto p-10">
-        <Outlet />
-      </div>
-    </>
-  ),
-});
 
 const routeTree = rootRoute.addChildren(PagePath);
 
