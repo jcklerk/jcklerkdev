@@ -19,7 +19,10 @@ export default function Projects({ projects }: { projects: Project[] }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
         {projects.map((project: Project) => (
           <div
-            className=" border-4 border-primary dark:border-secondary rounded-3xl w-full flex flex-col h-[50vh] sm:h-[55vw] lg:h-[35vw] !bg-cover bg-center bg-no-repeat"
+            className={
+              "border-4 border-primary dark:border-secondary rounded-3xl w-full flex flex-col h-[50vh] sm:h-[55vw] lg:h-[35vw] !bg-cover bg-center bg-no-repeat " +
+              (project?.id === 3 || project?.id === 4 ? "hidden lg:flex" : "")
+            }
             style={{
               background: "url('" + project?.image + "')",
             }}
