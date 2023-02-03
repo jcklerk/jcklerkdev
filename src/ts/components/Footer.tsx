@@ -39,20 +39,20 @@ export default function Foot() {
             </Button>
           </div>
           <div>
-            <Footer.Title title="legal" />
+            <Footer.Title title="Links" />
             <Footer.LinkGroup col={true}>
-              <Footer.Link href="#">Privacy Policy</Footer.Link>
-              <Footer.Link href="#">Licensing</Footer.Link>
-              <Footer.Link href="#">Terms & Conditions</Footer.Link>
+              <Footer.Link href="#">soon</Footer.Link>
             </Footer.LinkGroup>
           </div>
           <div>
-            <Footer.Title title="download" />
+            <Footer.Title title="Downloads" />
             <Footer.LinkGroup col={true}>
-              <Footer.Link href="#">iOS</Footer.Link>
-              <Footer.Link href="#">Android</Footer.Link>
-              <Footer.Link href="#">Windows</Footer.Link>
-              <Footer.Link href="#">MacOS</Footer.Link>
+              <Footer.Link href="https://apps.apple.com/us/developer/justin-cornei-klerk/id1645277594">
+                App Store
+              </Footer.Link>
+              <Footer.Link href="https://play.google.com/store/apps/dev?id=8260080810597510242">
+                Play Store
+              </Footer.Link>
             </Footer.LinkGroup>
           </div>
         </div>

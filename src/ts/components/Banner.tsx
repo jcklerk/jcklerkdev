@@ -1,6 +1,6 @@
 import { useLocalStorage } from "usehooks-ts";
 import meround from "../../img/meround.png";
-import merounddark from "../../img/merounddarkpng.png";
+import merounddark from "../../img/merounddark.png";
 
 export default function Banner() {
   const [isDark] = useLocalStorage("darkMode", false);

@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import Aboutme from "../components/Aboutme";
-import Banner from "../components/Banner";
 
 export default function AboutPage() {
   return (
@@ -11,7 +10,7 @@ export default function AboutPage() {
           name="description"
           content="Hi, I'm Justin. I'm a software develop and I love to build applications."
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="/aboutme" />
       </Helmet>
       <Aboutme />
     </>

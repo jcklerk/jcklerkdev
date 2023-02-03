@@ -1,7 +1,6 @@
 import { LanguageIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
-import { Link, useMatchRoute, useRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { useLocalStorage } from "usehooks-ts";
-import { rootRoute } from "../routes/web";
 
 export default function Nav() {
   const [isDark, setIsDark] = useLocalStorage("darkMode", false);
@@ -32,7 +31,7 @@ export default function Nav() {
         <div
           className={
             "h-1.5 w-32 bg-primary dark:bg-secondary rounded " +
-            (path == "/" ? null : "hidden")
+            (path === "/" ? null : "hidden")
           }
         ></div>
       </Link>
@@ -61,7 +60,7 @@ export default function Nav() {
           <div
             className={
               "h-1.5 w-full bg-primary dark:bg-secondary  rounded float-right " +
-              (path == "/projects" ? "" : "hidden")
+              (path === "/projects" ? "" : "hidden")
             }
           ></div>
         </Link>
@@ -72,7 +71,7 @@ export default function Nav() {
           <div
             className={
               "h-1.5 w-full bg-primary dark:bg-secondary  rounded float-right " +
-              (path == "/aboutme" ? "" : "hidden")
+              (path === "/aboutme" ? "" : "hidden")
             }
           ></div>
         </Link>

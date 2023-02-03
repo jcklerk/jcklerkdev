@@ -1,15 +1,9 @@
-import { useLocalStorage } from "usehooks-ts";
-import meround from "../../img/meround.png";
-import merounddark from "../../img/merounddarkpng.png";
+// import { useLocalStorage } from "usehooks-ts";
+
 import { Project } from "../typings";
 
 export default function Projects({ projects }: { projects: Project[] }) {
-  const [isDark] = useLocalStorage("darkMode", false);
-
-  let me = meround;
-  if (isDark) {
-    me = merounddark;
-  }
+  // const [isDark] = useLocalStorage("darkMode", false);
 
   return (
     <div className="w-full py-8 text-slate-700">

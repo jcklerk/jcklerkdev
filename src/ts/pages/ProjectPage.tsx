@@ -49,11 +49,8 @@ export default function ProjectPage() {
     <>
       <Helmet>
         <title>Projects ~ @JCKLERK</title>
-        <meta
-          name="description"
-          content="Hi, I'm Justin. I'm a software develop and I love to build applications."
-        />
-        <link rel="canonical" href="/" />
+        <meta name="description" content="This are projects I made." />
+        <link rel="canonical" href="/projects" />
       </Helmet>
       <Projects projects={project} />
     </>
