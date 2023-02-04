@@ -9,7 +9,7 @@ export default function Foot() {
         <div className="grid w-full grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
           <div className="col-span-2">
             <Footer.Title title="contact" />
-            <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="mb-4 grid grid-cols-2 gap-4">
               <TextInput
                 id="name"
                 type="name"
@@ -33,7 +33,7 @@ export default function Foot() {
             />
             <Button
               type="submit"
-              className="w-full !bg-primary !dark:bg-secondary"
+              className="!dark:bg-secondary w-full !bg-primary"
             >
               Send
             </Button>

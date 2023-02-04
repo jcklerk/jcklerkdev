@@ -32,7 +32,7 @@ if (!rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <HelmetProvider>
-        <div className="min-h-screen flex flex-col">
+        <div className="flex min-h-screen flex-col">
           <App />
           <Foot />
         </div>

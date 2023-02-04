@@ -23,65 +23,65 @@ export default function Nav() {
   const path = window.location.pathname;
 
   return (
-    <div className=" text-gray-700 dark:text-gray-200 body-font container px-auto py-4 md:py-10  mx-auto flex flex-wrap w-full mb-4">
-      <Link to="/" className="mb-6 lg:mb-0 sm:w-1/3 hidden sm:block">
-        <h1 className="sm:text-4xl text-5xl font-bold title-font mb-2">
+    <div className=" body-font px-auto container mx-auto mb-4 flex w-full  flex-wrap py-4 text-gray-700 dark:text-gray-200 md:py-10">
+      <Link to="/" className="mb-6 hidden sm:block sm:w-1/3 lg:mb-0">
+        <h1 className="title-font mb-2 text-5xl font-bold sm:text-4xl">
           @jcklerk
         </h1>
         <div
           className={
-            "h-1.5 w-32 bg-primary dark:bg-secondary rounded " +
+            "h-1.5 w-32 rounded bg-primary dark:bg-secondary " +
             (path === "/" ? null : "hidden")
           }
         ></div>
       </Link>
-      <div className="sm:w-2/3 float-right m-auto">
+      <div className="float-right m-auto sm:w-2/3">
         <div
-          className="mb-6 lg:mb-0 w-max float-right p-2"
+          className="float-right mb-6 w-max p-2 lg:mb-0"
           style={{ cursor: "pointer" }}
         >
-          <LanguageIcon className="p-2 w-[2rem] sm:w-[3rem]" />
+          <LanguageIcon className="w-[2rem] p-2 sm:w-[3rem]" />
         </div>
         <div
-          className="mb-6 lg:mb-0 w-max float-right p-2 "
+          className="float-right mb-6 w-max p-2 lg:mb-0 "
           onClick={toggleDarkMode}
           style={{ cursor: "pointer" }}
         >
           {isDark ? (
-            <SunIcon className="p-2 w-[2rem] sm:w-[3rem]" />
+            <SunIcon className="w-[2rem] p-2 sm:w-[3rem]" />
           ) : (
-            <MoonIcon className="p-2 w-[2rem] sm:w-[3rem]" />
+            <MoonIcon className="w-[2rem] p-2 sm:w-[3rem]" />
           )}
         </div>
-        <Link to="/projects" className="mb-6 lg:mb-0 w-max float-right p-2">
-          <h2 className="text-sm sm:text-xl md:text-2xl font-bold title-font p-2 text-right">
+        <Link to="/projects" className="float-right mb-6 w-max p-2 lg:mb-0">
+          <h2 className="title-font p-2 text-right text-sm font-bold sm:text-xl md:text-2xl">
             Projects
           </h2>
           <div
             className={
-              "h-1.5 w-full bg-primary dark:bg-secondary  rounded float-right " +
+              "float-right h-1.5 w-full rounded  bg-primary dark:bg-secondary " +
               (path === "/projects" ? "" : "hidden")
             }
           ></div>
         </Link>
-        <Link to="/aboutme" className=" mb-6 lg:mb-0 w-max float-right p-2">
-          <h2 className="text-sm sm:text-xl md:text-2xl font-bold title-font p-2 text-right">
+        <Link to="/aboutme" className=" float-right mb-6 w-max p-2 lg:mb-0">
+          <h2 className="title-font p-2 text-right text-sm font-bold sm:text-xl md:text-2xl">
             Over Mij
           </h2>
           <div
             className={
-              "h-1.5 w-full bg-primary dark:bg-secondary  rounded float-right " +
+              "float-right h-1.5 w-full rounded  bg-primary dark:bg-secondary " +
               (path === "/aboutme" ? "" : "hidden")
             }
           ></div>
         </Link>
-        <Link to="/" className="mb-6 lg:mb-0 w-max float-right p-2">
-          <h2 className="text-sm sm:text-xl md:text-2xl font-bold title-font p-2 text-right sm:hidden">
+        <Link to="/" className="float-right mb-6 w-max p-2 lg:mb-0">
+          <h2 className="title-font p-2 text-right text-sm font-bold sm:hidden sm:text-xl md:text-2xl">
             Home
           </h2>
           <div
             className={
-              "h-1.5 w-full bg-primary dark:bg-secondary  rounded float-right " +
+              "float-right h-1.5 w-full rounded  bg-primary dark:bg-secondary " +
               (path === "/" ? "" : "hidden")
             }
           ></div>

@@ -7,14 +7,14 @@ export default function Projects({ projects }: { projects: Project[] }) {
 
   return (
     <div className="w-full py-8 text-slate-700">
-      <h3 className="text-black dark:text-white font-bold text-3xl  md:text-6xl w-content text-center">
+      <h3 className="w-content text-center text-3xl font-bold  text-black dark:text-white md:text-6xl">
         Projects
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+      <div className="grid grid-cols-1 gap-10 py-10 sm:grid-cols-2 lg:grid-cols-4">
         {projects.map((project: Project) => (
           <div
             className={
-              "border-4 border-primary dark:border-secondary rounded-3xl w-full flex flex-col h-[50vh] sm:h-[55vw] lg:h-[35vw] !bg-cover bg-center bg-no-repeat " +
+              "flex h-[50vh] w-full flex-col rounded-3xl border-4 border-primary !bg-cover bg-center bg-no-repeat dark:border-secondary sm:h-[55vw] lg:h-[35vw] " +
               (project?.id === 3 || project?.id === 4 ? "hidden lg:flex" : "")
             }
             style={{
@@ -22,8 +22,8 @@ export default function Projects({ projects }: { projects: Project[] }) {
             }}
             key={project?.id}
           >
-            <div className="w-full bg-primary dark:bg-secondary bg-opacity-90 dark:bg-opacity-90 rounded-b-2xl border-opacity-0 bg-blue  bottom-0 mt-auto px-2">
-              <h3 className="text-xl md:text-2xl font-bold title-font p-2">
+            <div className="bg-blue bottom-0 mt-auto w-full rounded-b-2xl border-opacity-0 bg-primary bg-opacity-90  px-2 dark:bg-secondary dark:bg-opacity-90">
+              <h3 className="title-font p-2 text-xl font-bold md:text-2xl">
                 <a
                   className="hover:text-black hover:dark:text-black"
                   href={project?.url}
@@ -31,11 +31,11 @@ export default function Projects({ projects }: { projects: Project[] }) {
                   {project?.name}
                 </a>
               </h3>
-              <p className="text-sm md:text-base p-2">{project?.description}</p>
+              <p className="p-2 text-sm md:text-base">{project?.description}</p>
               <div className="flex flex-wrap justify-center text-slate-700 dark:text-slate-100">
                 {project?.technologies.map((tech: string) => (
                   <span
-                    className="text-xs md:text-sm p-2 m-1 bg-slate-100 dark:bg-slate-700 bg-opacity-70 dark:bg-opacity-70 hover:bg-opacity-100 hover:dark:bg-opacity-100 rounded-full"
+                    className="m-1 rounded-full bg-slate-100 bg-opacity-70 p-2 text-xs hover:bg-opacity-100 dark:bg-slate-700 dark:bg-opacity-70 hover:dark:bg-opacity-100 md:text-sm"
                     key={tech}
                   >
                     {tech}
