@@ -2,6 +2,9 @@ import { LanguageIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { Link } from "@tanstack/react-router";
 import { useLocalStorage } from "usehooks-ts";
 
+// eslint-disable-next-line
+export * from "flowbite";
+
 export default function Nav() {
   const [isDark, setIsDark] = useLocalStorage("darkMode", false);
 
@@ -40,7 +43,28 @@ export default function Nav() {
           className="float-right mb-6 w-max p-2 lg:mb-0"
           style={{ cursor: "pointer" }}
         >
-          <LanguageIcon className="w-[2rem] p-2 sm:w-[3rem]" />
+          <LanguageIcon
+            id="dropdownHoverButton"
+            data-dropdown-toggle="dropdownHover"
+            data-dropdown-trigger="hover"
+            className="w-[2rem] p-2 sm:w-[3rem]"
+          />
+          <div
+            id="dropdownHover"
+            className="z-10 hidden w-auto divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-700"
+          >
+            <ul
+              className="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownHoverButton"
+            >
+              <li className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                English
+              </li>
+              <li className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                Nederlands
+              </li>
+            </ul>
+          </div>
         </div>
         <div
           className="float-right mb-6 w-max p-2 lg:mb-0 "
