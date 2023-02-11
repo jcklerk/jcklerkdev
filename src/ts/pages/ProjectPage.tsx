@@ -5,11 +5,20 @@ import emblaProject from "../../img/emblaProject.jpg";
 import polderhockeyleagueProject from "../../img/polderhockeyleagueProject.jpg";
 import cakevoorkidsProject from "../../img/cakevoorkidsProject.jpg";
 import mhcschermenProject from "../../img/mhcschermenProject.png";
+import jcklerkdevProject from "../../img/jcklerkdevProject.jpg";
 
 export default function ProjectPage() {
   let project: Project[] = [
     {
       id: 1,
+      name: "Jcklerk Portfolio",
+      image: jcklerkdevProject,
+      description: "Aan deze website is word nogsteeds aan gewerkt.",
+      url: "https://jcklerk.dev/",
+      technologies: ["Nextjs", "Tailwind", "Flowbite", "Strapi"],
+    },
+    {
+      id: 2,
       name: "Polder Hockey League",
       image: polderhockeyleagueProject,
       description:
@@ -18,7 +27,7 @@ export default function ProjectPage() {
       technologies: ["Nextjs", "Tailwind", "Editor.js", "Strapi"],
     },
     {
-      id: 2,
+      id: 3,
       name: "Embla Iep Fink",
       image: emblaProject,
       description:
@@ -27,7 +36,7 @@ export default function ProjectPage() {
       technologies: ["Laravel", "Tailwind", "Editor.js", "FullCalendar"],
     },
     {
-      id: 3,
+      id: 4,
       name: "MHC InfoSchermen",
       image: mhcschermenProject,
       description:
@@ -36,7 +45,7 @@ export default function ProjectPage() {
       technologies: ["Html", "Tailwind", "PHP", "JavaScript"],
     },
     {
-      id: 4,
+      id: 5,
       name: "Cake voor Kids",
       image: cakevoorkidsProject,
       description:

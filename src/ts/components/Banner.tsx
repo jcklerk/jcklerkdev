@@ -1,22 +1,9 @@
-import { useLocalStorage } from "usehooks-ts";
-import meRound from "../../img/meround.webp";
-import meRoundDark from "../../img/merounddark.webp";
+import FotoJustin from "./FotoJustin";
 
 export default function Banner() {
-  const [isDark] = useLocalStorage("darkMode", false);
-
   return (
     <div className="grid w-full grid-cols-1 pb-8 md:grid-cols-3">
-      <div className="md:col-span-1">
-        <img
-          src={isDark ? meRoundDark : meRound}
-          alt="banner"
-          width={"auto"}
-          height={"auto"}
-          loading="lazy"
-          className="w-full object-cover object-center  px-20 pb-3 md:px-0 md:pb-0"
-        />
-      </div>
+      <FotoJustin />
       <div className="md:col-span-2">
         <div className="flex h-full flex-col justify-center">
           <div className="w-content m-auto md:mr-0 md:ml-auto">

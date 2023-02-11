@@ -14,8 +14,8 @@ export default function Projects({ projects }: { projects: Project[] }) {
         {projects.map((project: Project) => (
           <div
             className={
-              "flex h-[50vh] w-full flex-col rounded-3xl border-4 border-primary !bg-cover bg-center bg-no-repeat dark:border-secondary sm:h-[55vw] lg:h-[35vw] " +
-              (project?.id === 3 || project?.id === 4 ? "hidden lg:flex" : "")
+              "flex h-[50vh] w-full flex-col rounded-3xl border-4 border-primary !bg-cover bg-center bg-no-repeat dark:border-secondary sm:h-[55vw] lg:h-[35vw] "
+              // + (project?.id === 3 || project?.id === 4 ? "hidden lg:flex" : "")
             }
             style={{
               background: "url('" + project?.image + "')",

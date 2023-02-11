@@ -37,7 +37,7 @@ export default function Nav() {
         ></div>
       </Link>
       <div className="float-right m-auto sm:w-2/3">
-        <div
+        {/* <div
           className="float-right mb-6 w-max p-2 lg:mb-0"
           style={{ cursor: "pointer" }}
         >
@@ -68,7 +68,7 @@ export default function Nav() {
               Nederlands
             </Dropdown.Item>
           </Dropdown>
-        </div>
+        </div> */}
         <div
           className="float-right mb-6 w-max p-2 lg:mb-0 "
           onClick={toggleDarkMode}

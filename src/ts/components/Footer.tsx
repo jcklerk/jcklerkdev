@@ -1,5 +1,5 @@
 import { Button, Footer, Textarea, TextInput } from "flowbite-react";
-import { BsInstagram, BsGithub } from "react-icons/bs";
+import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiMail, HiUser } from "react-icons/hi";
 
 export default function Foot() {
@@ -8,7 +8,7 @@ export default function Foot() {
       <div className="w-full">
         <div className="grid w-full grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
           <div className="col-span-2">
-            <Footer.Title title="contact" />
+            {/* <Footer.Title title="contact" />
             <div className="mb-4 grid grid-cols-2 gap-4">
               <TextInput
                 id="name"
@@ -36,12 +36,13 @@ export default function Foot() {
               className="!dark:bg-secondary w-full !bg-primary"
             >
               Send
-            </Button>
+            </Button> */}
           </div>
           <div>
-            <Footer.Title title="Links" />
+            <Footer.Title title="Info" />
             <Footer.LinkGroup col={true}>
-              <Footer.Link href="#">soon</Footer.Link>
+              {/* <Footer.Link href="#">SOON</Footer.Link> */}
+              <p className="text-base">Aan deze website word nog gewerkt.</p>
             </Footer.LinkGroup>
           </div>
           <div>
@@ -68,6 +69,10 @@ export default function Foot() {
               icon={BsInstagram}
             />
             <Footer.Icon href="https://github.com/jcklerk" icon={BsGithub} />
+            <Footer.Icon
+              href="https://www.linkedin.com/in/jcklerk/"
+              icon={BsLinkedin}
+            />
           </div>
         </div>
       </div>
