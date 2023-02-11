@@ -47,7 +47,7 @@ export default function Foot() {
           <div>
             <Footer.Title title="Downloads" />
             <Footer.LinkGroup col={true}>
-              <Footer.Link href="https://apps.apple.com/us/developer/justin-cornei-klerk/id1645277594">
+              <Footer.Link href="https://apps.apple.com/nl/developer/justin-cornel-klerk/id1645277594">
                 App Store
               </Footer.Link>
               <Footer.Link href="https://play.google.com/store/apps/dev?id=8260080810597510242">
