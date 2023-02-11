@@ -10,7 +10,7 @@ export default function HomePage() {
           name="description"
           content="Hi, I'm Justin. I'm a software develop and I love to build applications."
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://jcklerk.dev/" />
       </Helmet>
       <Banner />
     </>

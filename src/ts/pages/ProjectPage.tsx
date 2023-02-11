@@ -62,7 +62,7 @@ export default function ProjectPage() {
           name="description"
           content="Dit zijn projecten die ik heb gemaakt."
         />
-        <link rel="canonical" href="/projects" />
+        <link rel="canonical" href="https://jcklerk.dev/projects" />
       </Helmet>
       <Projects projects={project} />
     </>

@@ -10,7 +10,7 @@ export default function AboutPage() {
           name="description"
           content="Ik ben Justin Klerk 20 jaar en studeer Software Development in Landstede Harderwijk."
         />
-        <link rel="canonical" href="/aboutme" />
+        <link rel="canonical" href="https://jcklerk.dev/aboutme" />
       </Helmet>
       <Aboutme />
     </>
