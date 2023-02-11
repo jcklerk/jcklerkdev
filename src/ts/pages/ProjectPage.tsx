@@ -15,7 +15,7 @@ export default function ProjectPage() {
       image: jcklerkdevProject,
       description: "Aan deze website is word nogsteeds aan gewerkt.",
       url: "https://jcklerk.dev/",
-      technologies: ["Nextjs", "Tailwind", "Flowbite", "Strapi"],
+      technologies: ["React", "Tailwind", "Flowbite", "Strapi"],
     },
     {
       id: 2,
