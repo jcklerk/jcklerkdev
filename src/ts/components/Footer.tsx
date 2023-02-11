@@ -57,7 +57,7 @@ export default function Foot() {
             </Footer.LinkGroup>
           </div>
         </div>
-        <div className="w-full bg-gray-700 py-6 px-4 sm:flex sm:items-center sm:justify-between">
+        <div className="w-full bg-slate-100 py-6 px-4 dark:bg-gray-700 sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright
             href="#"
             by="@JCKLERK"
