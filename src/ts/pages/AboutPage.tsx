@@ -5,10 +5,10 @@ export default function AboutPage() {
   return (
     <>
       <Helmet>
-        <title>@JCKLERK</title>
+        <title>AboutMe ~ @JCKLERK</title>
         <meta
           name="description"
-          content="Hi, I'm Justin. I'm a software develop and I love to build applications."
+          content="Ik ben Justin Klerk 20 jaar en studeer Software Development in Landstede Harderwijk."
         />
         <link rel="canonical" href="/aboutme" />
       </Helmet>
