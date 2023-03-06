@@ -6,6 +6,7 @@ import polderhockeyleagueProject from "../../img/polderhockeyleagueProject.jpg";
 import cakevoorkidsProject from "../../img/cakevoorkidsProject.jpg";
 import mhcschermenProject from "../../img/mhcschermenProject.png";
 import jcklerkdevProject from "../../img/jcklerkdevProject.jpg";
+import iventionairProject from "../../img/iventionairProject.jpg";
 
 export default function ProjectPage() {
   let project: Project[] = [
@@ -13,7 +14,7 @@ export default function ProjectPage() {
       id: 1,
       name: "Jcklerk Portfolio",
       image: jcklerkdevProject,
-      description: "Aan deze website is word nogsteeds aan gewerkt.",
+      description: "This website is still under development",
       url: "https://jcklerk.dev/",
       technologies: ["React", "Tailwind", "Flowbite", "Strapi"],
     },
@@ -52,6 +53,22 @@ export default function ProjectPage() {
         "Cake voor Kids is een stichting die kinderen die het niet zo breed hebben een taart geeft. Ik als vrijwilliger heb deze website gemaakt voor de stichting.",
       url: "https://cakevoorkids.nl/",
       technologies: ["Wordpress", "Divi", "Woocommerce"],
+    },
+    {
+      id: 6,
+      name: "IventionAir",
+      image: iventionairProject,
+      description:
+        "iventionair is an award-winning controlled indoor climate system for clean air, cooling and heating.",
+      url: "https://iventionair.nl/",
+      technologies: [
+        "Wordpress",
+        "Divi",
+        "Laravel",
+        "MQTT",
+        "Xamarin",
+        "nodejs",
+      ],
     },
   ];
   return (

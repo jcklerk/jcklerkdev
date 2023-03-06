@@ -8,7 +8,7 @@ export const rootRoute = new RootRoute({
   component: () => (
     <>
       <Nav />
-      <div className=" max-w-screen-2xl mx-auto p-10">
+      <div className="mx-auto max-w-screen-2xl p-10">
         <Outlet />
       </div>
     </>

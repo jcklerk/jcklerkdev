@@ -7,8 +7,8 @@ export default function Foot() {
     <Footer bgDark={true}>
       <div className="w-full">
         <div className="grid w-full grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
-          <div className="col-span-2">
-            {/* <Footer.Title title="contact" />
+          {/* <div className="col-span-2"> */}
+          {/* <Footer.Title title="contact" />
             <div className="mb-4 grid grid-cols-2 gap-4">
               <TextInput
                 id="name"
@@ -37,12 +37,15 @@ export default function Foot() {
             >
               Send
             </Button> */}
-          </div>
+          {/* </div> */}
           <div>
             <Footer.Title title="Info" />
             <Footer.LinkGroup col={true}>
               {/* <Footer.Link href="#">SOON</Footer.Link> */}
-              <p className="text-base">Aan deze website word nog gewerkt.</p>
+              <p className="text-base">
+                This website is still under development
+              </p>
+              <p className="text-base">Contact: info@jcklerk.dev</p>
             </Footer.LinkGroup>
           </div>
           <div>
