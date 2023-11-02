@@ -43,7 +43,8 @@ export default function Foot() {
             <Footer.LinkGroup col={true}>
               {/* <Footer.Link href="#">SOON</Footer.Link> */}
               <p className="text-base">
-                This website is still under development
+                This website is a portfolio website for my projects and company.
+                Check out my projects and contact me if you need a custom build web application or something else.
               </p>
               <p className="text-base">Contact: info@jcklerk.dev</p>
             </Footer.LinkGroup>
@@ -56,6 +57,20 @@ export default function Foot() {
               </Footer.Link>
               <Footer.Link href="https://play.google.com/store/apps/dev?id=8260080810597510242">
                 Play Store
+              </Footer.Link>
+            </Footer.LinkGroup>
+          </div>
+          <div>
+            <Footer.Title title="Other" />
+            <Footer.LinkGroup col={true}>
+              <Footer.Link href="https://tickets.jcklerk.nl">
+                Event Tickets Shop
+              </Footer.Link>
+              <Footer.Link href="https://privacy-policy.jcklerk.dev">
+                privacy-policy
+              </Footer.Link>
+              <Footer.Link href="https://status.jcklerk.dev/status/iventionair">
+                Status: iventionair
               </Footer.Link>
             </Footer.LinkGroup>
           </div>
