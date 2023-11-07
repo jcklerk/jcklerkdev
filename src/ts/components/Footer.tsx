@@ -47,6 +47,7 @@ export default function Foot() {
                 Check out my projects and contact me if you need a custom build web application or something else.
               </p>
               <p className="text-base">Contact: info@jcklerk.dev</p>
+              <p className="text-base">KVK: 900825144</p>
             </Footer.LinkGroup>
           </div>
           <div>
